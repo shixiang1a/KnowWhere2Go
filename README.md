@@ -34,7 +34,7 @@ python source_validator.py
 ```
 
 ## Model Weights
-You can now download the 7B and 13B model lora weights from [Google Drive](). The weights are placed respectively in `model/KW2G_model/7b` and `model/KW2G_model/13b`.
+You can now download the 7B and 13B model lora weights from [Google Drive](https://drive.google.com/file/d/1xOgYGyhQcSKMSWVCTxXw2LFKYhwIGAnv/view?usp=share_link). The weights are placed respectively in `model/KW2G_model/7b` and `model/KW2G_model/13b`.
 
 ## Local Deployment
 ```
