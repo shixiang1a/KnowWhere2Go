@@ -1,10 +1,10 @@
-[![Gradio](https://img.shields.io/badge/Gradio-Online%20Demo-blue)]()
+[![Gradio](https://img.shields.io/badge/Gradio-Online%20Demo-blue)](http://web-score-123.natapp1.cc)
 
 # KnowWhere2Go
 
 <font size=7><div align='center'>Make LLM a Relevant, Responsible, and Trustworthy Searcher</div></font>
 
-<font size=7><div align='center' > <a href="">**Paper**</a> | [**Training**](#training) | [**Local Deployment**](#deployment) | [**Dataset**](#dataset) | <a href="">**Online Demo**</a></div></font>
+<font size=7><div align='center' > <a href="">**Paper**</a> | [**Training**](#training) | [**Local Deployment**](#deployment) | [**Dataset**](#dataset) | <a href="http://web-score-123.natapp1.cc">**Online Demo**</a></div></font>
 
 <p align="center"> <img src="https://github.com/shixiang1a/KnowWhere2Go/blob/main/framework.png" width="100%"> </p>
 
