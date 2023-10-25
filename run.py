@@ -9,7 +9,7 @@ from module.source_validator import SourceValidator
 from module.source_optimizer import SourceOptimizer
 from module.source_pool import SourcePool
 from args import get_args
-from nltk.tokenize import sent_tokenize
+from nltk.tokenize import word_tokenize
 
 
 def main(
@@ -169,9 +169,9 @@ def main(
             used_for_answer_generate = []
             length_for_answer_generate = 0
             for evidence, score in sorted_evidence_score_dict:
-                if length_for_answer_generate + len(sent_tokenize(evidence)) < 1000:
+                if length_for_answer_generate + len(word_tokenize(evidence)) < 500:
                     used_for_answer_generate.append(evidence)
-                    length_for_answer_generate += len(sent_tokenize(evidence))
+                    length_for_answer_generate += len(word_tokenize(evidence))
                 else:
                     break
             answer_show = source_validator.generate_answer(query, used_for_answer_generate)
