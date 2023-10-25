@@ -151,12 +151,11 @@ def main(
                     if [web, "<" + url + ">", "✅Checked"] not in updated_source_dataframe_show:
                         updated_source_dataframe_show.append([web, "<" + url + ">", "✅Checked"])
                     for sub_evidence in evidence:
-                        for e in sub_evidence:
-                            evidence_sentence = e.split(" reliability_score: ")[0]
-                            evidence_score = e.split(" reliability_score: ")[1]
-                            evidence_score_dict[evidence_sentence] = evidence_score
-                            url_evidence_show_update += "<div><a href=\"" + href + "\" target='_blank'>" + href + "</a>" + "<p class='clamp-lines'>"+ "[" + str(evidence_count + 1) + "] " + evidence_sentence + "</p></div>"
-                            evidence_count += 1
+                        evidence_sentence = sub_evidence.split(" reliability_score: ")[0]
+                        evidence_score = sub_evidence.split(" reliability_score: ")[1]
+                        evidence_score_dict[evidence_sentence] = evidence_score
+                        url_evidence_show_update += "<div><a href=\"" + href + "\" target='_blank'>" + href + "</a>" + "<p class='clamp-lines'>"+ "[" + str(evidence_count + 1) + "] " + evidence_sentence + "</p></div>"
+                        evidence_count += 1
             else:
                 pass
         
